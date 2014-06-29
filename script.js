@@ -21,7 +21,6 @@ $("#side-pannel li a").on('click', function(e){
 
 function showMenu(){
 	$("#side-pannel").css( "left", "0" );
-	$("header").css("opacity", "0.3");
   	$("#nav-toggle").css( "left", "280px" );
   	$('html').css({'overflow': 'hidden', 'position': 'absolute', 'width': '100%'});
   	menuVisible = !menuVisible;
@@ -29,7 +28,6 @@ function showMenu(){
 
 function hideMenu(){
 	$("#side-pannel").css( "left", "-250px" );
-	$("header").css("opacity", "1");
 	$("#nav-toggle").css( "left", "30px" );
 	$('html').css({'overflow': 'auto', 'position': 'relative'});
 	menuVisible = !menuVisible;
