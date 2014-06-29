@@ -1,10 +1,74 @@
 <html>
 	<head>
-		<title>My personnal page</title>
+		<title>Baptiste Le Goff</title>
+		<link rel="stylesheet" href="style.css" />
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100,500' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Alegreya+Sans+SC:100,300,400' rel='stylesheet' type='text/css'>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<meta name="viewport" content="initial-scale=1.0 user-scalable=no"/>
 	</head>
 
 	<body>
-		Hello there
+		<header>
+			make, remove, remake
+		</header>
+
+		<a id="nav-toggle"><span></span></a>
+
+		<div id="side-pannel">
+			<li><a href="#about">ABOUT</a></li>
+			<li><a href="#projects">PROJECTS</a></li>
+			<li><a href="#contact">CONTACT</a></li>
+		</div>
+
+
+		<div id="wrapper">
+
+			<section>
+				<div id="about"></div>
+				<h1>Who am i?</h1>
+				<p>Baptiste Le Goff : french guy, IT student, developer, musician 2.0.</p>
+
+				<h1>What i do</h1>
+				<div class="skills"> <p>Development</p> <img class="svg" src="code.svg" width="30" /> </div>
+
+				<p>I make random useless applications for myself and I. I'm a HTML5 lover but I also program things in languages such as C++, Java or Objective-C. </p>
+
+				<div class="skills"> <p>Music Production</p> <img class="svg" src="equalizer.svg" width="30" /> </div>
+
+				<p>I compose some kind of house/techno stuff with Ableton Live. If you want to listen to what I do, you can go to my <a href="http://soundcloud.com/dislocated">soundcloud page</a>. </p>
+
+				<div id="projects"></div>
+				<h1>My projects</h1>
+				<div class="project"> <p>Random Track</p> </div>
+
+				<p>
+					Random house/techno jukebox, using the soundcloud javascript API. I chose the tracks myself so be prepared to hear some great stuff.
+					<a href="http://bill-vesae.fr/randomtrack">Link</a>
+				</p>
+
+				<div class="project"> <p>Slider</p> </div>
+				<p>
+					[Work in progress] Slider is an app that allows you to use your android phone as a MIDI controller for your favorite DAW. Uses bluetooth to connect with the computer.
+					<a href="https://github.com/balegoff/Slider">Link</a>
+				</p>
+
+				<div id="contact"></div>
+				<h1>Contact Me</h1>
+				<p>
+					legoff.baptiste@gmail.com <br />
+					Twitter : <a href="http://twitter.com/balegoff">@balegoff</a>
+				</p>
+
+				
+
+			</section>
+
+			
+		</div>
+
+	<script src="script.js"></script>
 	</body>
 
 </html>
