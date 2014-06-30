@@ -26,6 +26,8 @@ p{
 	margin-bottom: 40px;
 }
 
+/* %%%%%%%% HEADER %%%%%%%% */
+
 header{
 	background-image:url("img/ban5.png");
 	background-size: 100%;
@@ -62,33 +64,7 @@ header{
 	}
 }
 
-nav{
-	position: fixed;
-	top: 0;
-	font-family: 'Roboto', sans-serif;
-	font-size: 1.5em;
-	font-weight: 300;
-	width: 100%;
-	z-index: 3;
-}
-
-nav li{
-	list-style: none;
-	display: inline-block;
-	float: right;
-	color: #fff;
-	margin-top: 30px;
-	margin-right: 80px;
-	
-}
-
-nav li a {
-	color: #fff;
-	transition: color 0.3s ease-in;
-}
-
-
-/* Hamburger Menu */
+/* %%%%%%%% NAV BUTTON %%%%%%%% */
 
 #nav-back{
 	height: 27px;
@@ -150,7 +126,7 @@ nav li a {
 }
 
 
-/* Side pannel */
+/* %%%%%%%% SIDE PANNEL %%%%%%%% */
 
 #side-pannel{
 	position: fixed;
@@ -180,7 +156,7 @@ nav li a {
 
 
 
-/* Page body */
+/* %%%%%%%% WRAPPER %%%%%%%% */
 
 #wrapper{
 	width: 100%;
@@ -209,7 +185,6 @@ nav li a {
 section{
 	padding: 60px 200px;
 	color: #333;
-	
 	text-align: left;
 	display: inline-block;;
 }
@@ -220,13 +195,14 @@ section{
 	}
 }
 
+/* %%%%%%%% SKILLS/PROJECTS %%%%%%%% */
+
 .skills p, .skills img{
 	display: inline-block;
 }
 
 .skills img{
 	float: left;
-	display: inline-block;
 }
 
 .skills p, .project{
@@ -244,7 +220,6 @@ section{
 	margin-top : 35px;
 	margin-bottom: 20px;
 }
-
 
 .skills{
 	height: 30px;

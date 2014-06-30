@@ -40,7 +40,6 @@ $("#side-pannel li a").on('click', function(e){
 /* %%%%%%%%%%%% PARALAX %%%%%%%%%%%% */
 $(window).bind('scroll',function(e){
     parallaxScroll();
-    
 });
  
 function parallaxScroll(){
@@ -48,6 +47,5 @@ function parallaxScroll(){
 
    	$('header').css('top',((scrolled*0.5))+'px');
    	$('header').css('line-height', ($("header").height() - 1.5*scrolled)+'px')
-
 }
 
