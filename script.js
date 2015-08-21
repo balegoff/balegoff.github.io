@@ -2,13 +2,13 @@ var menuVisible = false;
 
 /* %%%%%%%%%%%% Menu Animation %%%%%%%%%%%% */
 $("#nav-toggle, #nav-back").on( "click", function(e) {
-	
+
 	$("#nav-toggle").toggleClass("active");
 
 	if(!menuVisible)
 		showMenu();
   	else
-  		hideMenu();  	
+  		hideMenu();
 });
 
 function showMenu(){
@@ -41,7 +41,7 @@ $("#side-pannel li a").on('click', function(e){
 $(window).bind('scroll',function(e){
     parallaxScroll();
 });
- 
+
 function parallaxScroll(){
     var scrolled = $(window).scrollTop();
 
@@ -51,7 +51,6 @@ function parallaxScroll(){
 
 
 /* %%%%%%%%%%%% GOOGLE ANALYTICS %%%%%%%%%%%% */
-
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -59,4 +58,3 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 
 ga('create', 'UA-52460072-1', 'auto');
 ga('send', 'pageview');
-

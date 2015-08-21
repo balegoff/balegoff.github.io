@@ -29,7 +29,7 @@ p{
 /* %%%%%%%% HEADER %%%%%%%% */
 
 header{
-	background-image:url("img/people.jpg");
+	background-image:url("img/fish.jpeg");
 	background-size: 100%;
 	background-position: top;
 	background-repeat: no-repeat;
@@ -50,7 +50,7 @@ header{
 
 @media (max-width: 1000px){
 	header{
-		background-image:url("img/people_min.jpg");
+		background-image:url("img/fish_min.jpeg");
 		height: 350px;
 		line-height: 350px;
 		font-size: 2em;
@@ -199,6 +199,7 @@ section{
 
 .skills p, .skills img{
 	display: inline-block;
+	line-height: 30px;
 }
 
 .skills img{
