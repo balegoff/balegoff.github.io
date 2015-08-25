@@ -1,4 +1,5 @@
 var menuVisible = false;
+var transition_time = 200;
 
 /* %%%%%%%%%%%% Menu Animation %%%%%%%%%%%% */
 $("#nav-toggle, #nav-back").on( "click", function(e) {
@@ -12,17 +13,19 @@ $("#nav-toggle, #nav-back").on( "click", function(e) {
 });
 
 function showMenu(){
-	$("#side-pannel").css( "left", "0" );
-  	$("#nav-toggle").css( "left", "290px" );
-  	$("#nav-back").css( "left", "289px" );
-  	$('html').css({'overflow': 'hidden', 'position': 'absolute', 'width': '100%'});
-  	menuVisible = !menuVisible;
+	$("#nav-toggle").animate({ left: "290px", }, transition_time);
+	$("#nav-back").animate({ left: "289px", }, transition_time);
+	$("#side-pannel").animate({ left: "0", }, transition_time);
+	$("#wrapper, header").animate({ left: "250px", }, transition_time);
+  $('html').css({'overflow': 'hidden', 'position': 'absolute', 'width': '100%'});
+  menuVisible = !menuVisible;
 }
 
 function hideMenu(){
-	$("#side-pannel").css( "left", "-250px" );
-	$("#nav-toggle").css( "left", "30px" );
-	$("#nav-back").css( "left", "29" );
+	$("#nav-toggle").animate({ left: "30px", }, transition_time);
+	$("#nav-back").animate({ left: "29px", }, transition_time);
+	$("#side-pannel").animate({ left: "-250px", }, transition_time);
+	$("#wrapper, header").animate({ left: "0", }, transition_time);
 	$('html').css({'overflow': 'auto', 'position': 'relative'});
 	menuVisible = !menuVisible;
 }
@@ -44,7 +47,6 @@ $(window).bind('scroll',function(e){
 
 function parallaxScroll(){
     var scrolled = $(window).scrollTop();
-
    	$('header').css('top',((scrolled*0.5))+'px');
    	$('header').css('line-height', ($("header").height() - 1.5*scrolled)+'px')
 }
