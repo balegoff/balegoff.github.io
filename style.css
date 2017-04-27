@@ -11,7 +11,7 @@ body{
 
 a{
 	text-decoration: none;
-	color: #42A5F5;
+	color: #0000ff;
 	font-weight: 300;
 }
 
@@ -33,7 +33,7 @@ p{
 /* %%%%%%%% HEADER %%%%%%%% */
 
 header{
-	background-image:url("img/fish.jpeg");
+	background-image:url("img/push.jpg");
 	background-size: 100%;
 	background-position: top;
 	background-repeat: no-repeat;
@@ -41,7 +41,7 @@ header{
 	line-height: 500px;
 	width: 100%;
 	text-align: center;
-	color: #fff;
+	color: #0000ff;
 	font-family: 'Roboto', sans-serif;
 	font-size: 4em;
 	font-weight: 300;
@@ -54,7 +54,6 @@ header{
 
 @media (max-width: 1000px){
 	header{
-		background-image:url("img/fish_min.jpeg");
 		height: 350px;
 		line-height: 350px;
 		font-size: 2em;
@@ -221,7 +220,7 @@ section{
 
 .skills p, .project{
 	font-weight: 300;
-	color: #42A5F5;
+	color: #333;
 }
 
 .skills p{
