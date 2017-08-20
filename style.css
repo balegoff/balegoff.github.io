@@ -235,3 +235,29 @@ section{
 .skills{
 	height: 30px;
 }
+
+/* %%%%%%%% CONTACTS %%%%%%%% */
+
+#contact a, svg{
+	display: inline-block;
+}
+
+#contact svg:hover{
+	fill: #0000ff;
+    -webkit-transition: fill 250ms ease-in-out;
+    -ms-transition: fill 250ms ease-in-out;
+    transition: fill 250ms ease-in-out;
+}
+
+#contact svg {
+    height: 100%;
+    width: 100%;
+    fill: #444;
+}
+
+#contact a {
+	position: relative;
+    height: 48px;
+    width: 48px;
+    margin-right: 160px;
+}
